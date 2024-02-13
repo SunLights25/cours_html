@@ -1,0 +1,69 @@
+html {
+    font-size: 62.5%;
+    /* 16px " 62.5 = 10.00 */
+}
+
+/* propriété générale pour mettre en police de base*/
+body {
+    font: 1.6rem sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* on supprime toutes les marges par défaut */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: rgb(68, 17, 17);
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/* theme */
+header>h1 {
+    background-color: rgba(85, 239, 196, 1.0);
+    color: #fff;
+    font-weight: normal;
+    line-height: 6.5rem;
+    /*65px */
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+section {
+    max-width: 120rem;
+    margin: 5rem auto;
+    border: solid .1rem #333;
+    padding: 1rem;
+}
+
+section img {
+    width: 100%;
+}
+
+footer *{
+    text-align: center;
+}
