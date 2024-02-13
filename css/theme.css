@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&display=swap');
 html {
     font-size: 62.5%;
     /* 16px " 62.5 = 10.00 */
@@ -5,10 +7,14 @@ html {
 
 /* propriété générale pour mettre en police de base*/
 body {
-    font: 1.6rem sans-serif;
+   
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6;
     letter-spacing: .1rem;
     line-height: 1.6;
     margin: 0;
+    background-color: var(--bgmain);
+    
 }
 
 /* on supprime toutes les marges par défaut */
@@ -43,27 +49,45 @@ img {
 }
 
 /* theme */
+:root{/* selector root = racine avec les variables */
+    --bgcolor: rgb(85, 239, 196, 1.0);
+    --color-text-title:#bd8f12;
+    --color-border: #e03751;
+    --border-radius: .4rem;
+    --bgsection: #99e458;
+    --subtitle: uppercase; 
+    --bgmain: #e84393; 
+}
 header>h1 {
-    background-color: rgba(85, 239, 196, 1.0);
-    color: #fff;
+    background-color:var(--bgcolor);
+    color: var(--color-text-title) ;
+    border: var(--color-border) solid;
     font-weight: normal;
     line-height: 6.5rem;
     /*65px */
     text-align: center;
     font-size: 4.5rem;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 section {
+    background-color: var(--bgsection);
     max-width: 120rem;
     margin: 5rem auto;
     border: solid .1rem #333;
+    border-radius: var(--border-radius);
     padding: 1rem;
 }
 
 section img {
     width: 100%;
 }
-
+section h2{
+    text-transform: var(--subtitle);
+    font-weight: 400;
+}
 footer *{
     text-align: center;
 }
