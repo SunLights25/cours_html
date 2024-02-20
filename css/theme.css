@@ -54,9 +54,10 @@ img {
     --color-text-title:#bd8f12;
     --color-border: #e03751;
     --border-radius: .4rem;
-    --bgsection: #99e458;
+    --bgsection: #ecedeb;
     --subtitle: uppercase; 
     --bgmain: #e84393; 
+    --btn-default-color: rgb(0, 0, 0);
 }
 header>h1 {
     background-color:var(--bgcolor);
@@ -88,6 +89,27 @@ section h2{
     text-transform: var(--subtitle);
     font-weight: 400;
 }
+.btns-default{
+    display: inline-block;
+    width: max-content;
+    background-color: var(--btn-default-color);
+    line-height:2.5em;
+    padding: .3rem .2rem;
+    border-radius: var(--border-radius);
+    color:var(--bgsection);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.btn-option-success{ /*couleur verte*/
+    background-color:#00b894 ;
+    color: var(--bgsection);
+
+}
+.btn-option-warning{
+    background-color: #d63031;
+    color: var(--bgsection);
+}
+/*création d'un boutton par un élément a*/
 footer *{
     text-align: center;
 }
