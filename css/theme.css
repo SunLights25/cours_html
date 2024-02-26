@@ -85,7 +85,21 @@ section {
 }
 
 section img {
+    filter: grayscale(100%);
     width: 100%;
+    border-radius: var(--border-radius);
+    transition: all .5s ease-in-out;
+    transform: scale(1) rotateY(0deg);
+    opacity: 1;
+    box-shadow: 0;
+}
+section:hover img{
+    box-shadow: 0 0 1.9rem #eb8107;
+    opacity: .9;
+    border-radius: 10rem;
+    filter: initial;
+    cursor: pointer;
+    rotate: 360deg;
 }
 section h2{
     text-transform: var(--subtitle);
