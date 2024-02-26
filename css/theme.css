@@ -105,11 +105,19 @@ section h2{
 .btn-option-success{ /*couleur verte*/
     background-color:#00b894 ;
     color: var(--bgsection);
+    transition: all .3s ease-in-out;
 
+}
+/* add pseudo class hover */
+
+.btn-option-success:hover, 
+.btn-option-warning:hover{
+    filter: brightness(0.5); /* filter luminosité */
 }
 .btn-option-warning{
     background-color: #d63031;
     color: var(--bgsection);
+    transition: all .3s ease-in-out;
 }
 
 /*title level two*/
